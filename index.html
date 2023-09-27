@@ -1,0 +1,133 @@
+<!DOCTYPE html> <!-- Declaração do tipo de documento HTML -->
+<html lang="pt-br"> <!-- Abertura da tag HTML com a definição do idioma -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres para UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configuração de viewport para dispositivos móveis -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Pré-conexão com o servidor de fontes Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Pré-conexão com o servidor de fontes Google com atributo crossorigin -->
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet"> <!-- Importa a fonte "Mooli" do Google Fonts -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa um arquivo CSS chamado "style.css" -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" 
+    crossorigin="anonymous"> <!-- Importa o CSS do framework Bootstrap com integridade e crossorigin -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+    crossorigin="anonymous"></script> <!-- Importa o JavaScript do Bootstrap com integridade e crossorigin -->
+    <title>Document</title> <!-- Título da página exibido na aba do navegador -->
+</head>
+
+<body>
+    <!-- Inicio do menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Criação de um menu de navegação -->
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">SNKRS</a> <!-- Título do menu -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> <!-- Ícone do botão de alternância para dispositivos móveis -->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!-- Conteúdo do menu -->
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a> <!-- Link para a página "Home" -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">DUNK</a> <!-- Link para a página "DUNK" -->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">JORDAN</a> <!-- Link para a página "JORDAN" -->
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Ache seu SNKRS" aria-label="Ache seu SNKRS">
+              <button class="btn btn-outline-success" type="submit">BUSCAR</button> <!-- Formulário de busca -->
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- Fim do Menu -->
+      
+      <!-- Inicio Carousel -->
+      <div id="carouselExampleCaptions" class="carousel slide"> <!-- Criação de um carrossel de imagens -->
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Imagens/tenis01.png" class="d-block w-100" alt="Imagem 1"> <!-- Imagem do primeiro slide -->
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <!-- Mais slides com imagens e legendas -->
+        </div>
+        <!-- Botões de controle para avançar e retroceder no carrossel -->
+      </div>
+      <!-- Fim Carousel -->
+
+      <!-- Seção com imagem a esquerda e texto à direita -->
+      <section class="container-card mt-5"> <!-- Criação de uma seção com cartões -->
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagens/tenis01.png" class="card-img-top" alt="...">
+              <div class="card-body text-center">
+                <h5 class="card-title">Orewood Brown</h5>
+                <p class="card-text">Air Jordan 3 Retro</p>
+                <p class="card-text">Orewood Brown</p>
+                <p class="card-text">R$ 1699,99</p>
+                <a href="https://www.nike.com.br/snkrs/air-jordan-3-retro-027141.html?cor=3X" class="btn btn-primary">COMPRAR</a>
+              </div>
+            </div>
+          </div>
+          <!-- Mais cartões com imagens e informações de produtos -->
+        </div>
+      </section>
+      <!-- Fim Seção -->
+
+    <!-- Ínicio do Footer -->
+    <footer>
+        <div class="container-footer"> <!-- Container principal que agrupa todos os atributos do footer -->
+            <div class="list"> <!-- Container que organiza a primeira lista -->
+                <h5>SNKRS</h5> <!-- Título da lista -->
+                <ul>
+                    <li><a href="#" >Air Jordan 3</a></li> <!-- Primeiro tópico da lista -->
+                    <li><a href="#" >Dunk SB</a></li> <!-- Segundo tópico da lista -->
+                    <li><a href="#" >Air Jordan 1</a></li> <!-- Terceiro tópico da lista -->
+                </ul>
+            </div>
+
+            <div class="list"> <!-- Container que organiza a segunda lista -->
+                <h5>Contato</h5> <!-- Título da lista -->
+                <ul>
+                    <li><a href="mailto: matheussampaio31@gmail.com" >E-mail</a></li> <!-- Primeiro tópico da lista -->
+                    <li><a href="#" >Telefone</a></li> <!-- Segundo tópico da lista -->
+                </ul>
+            </div>
+
+            <div class="list"> <!-- Container que organiza a terceira lista -->
+                <h5>Redes Sociais</h5> <!-- Título da lista -->
+                <ul>
+                    <li><a href="#" >Linkedin</a></li> <!-- Primeiro tópico da lista -->
+                    <li><a href="#" >GitHub</a></li> <!-- Segundo tópico da lista -->
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright"> <!-- Container que recebe o texto de copyright -->
+            <p>Copyright © 2023 Inc. Todos os direitos reservados</p> <!-- Texto de copyright -->
+        </div>
+    </footer>
+    <!-- Fim do Footer -->
+
+    <!-- Inclusão de scripts do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
